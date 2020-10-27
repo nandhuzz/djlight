@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <style>
+
+            .center {
+           position: absolute;
+           left: 50%;
+           top: 50%;
+           transform: translate(-50%, -50%);
+           padding: 10px;
+            
+         }
+         
+         
+         </style>
+    </head>
+    <body onload="myFunction() ">
+        <a href="index.html"> Switch to index</a>
+        <div id="name" class="center" style=" font-size: 160px; vertical-align: middle; font-weight: bold; margin-top: 50px;"></div>
+        
+        <script>
+            const name = document.querySelector('#name')
+            function generateColor() {
+                var length = 6,
+                    charset = "abcdef0123456789",
+                    retVal = "#";
+                    for (var i = 0, n = charset.length; i < length; ++i) {
+                        retVal += charset.charAt(Math.floor(Math.random() * n));
+                }
+                return retVal;
+            }
+
+
+            var arr=["Anandhu", "Ajish", "Abhilash", "Devika", "Kavya", "Edvin", "Navaneeth", "Jill",  "Nyshitha", "Ansila", "Vaesha"];
+            function myFunction() 
+            {
+                var b = generateColor();
+                document.body.style.backgroundColor = b;
+                var c = generateColor();
+                name.style.color = c;
+                let a = Math.floor(Math.random() * 11);
+                document.getElementById("name").innerText = arr[a];
+
+            }
+            setInterval("myFunction()", 200);
+        </script>
+    </script>
+    </body>
+</html>
