@@ -1,0 +1,19 @@
+<html>
+    <head>
+
+    </head>
+    <body onload="myFunction() ">
+
+
+        <script>
+            var arr=["red", "black", "yellow", "green", "white", "blue", "pink", "violet",  "skyblue"];
+            function myFunction() 
+            {
+                let a = Math.floor(Math.random() * 9);
+                document.body.style.backgroundColor = arr[a];
+            }
+            setInterval("myFunction()", 200);
+        </script>
+    </script>
+    </body>
+</html>
