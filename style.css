@@ -1,0 +1,288 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+/* Title Section */ 
+.title_image{
+    background-image : url('image/Mask Group 1@2x.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: fill;
+    height: 54.17vw;
+   
+}
+
+.title_logo{
+    margin-left: 48.5%;
+    margin-right: 47%.5;
+    margin-top: 15%;
+    height: 3vw;
+    background-size: contain;
+   
+    z-index: 1;
+   
+}
+.title_heading{
+    margin-top: .8%;
+    margin-left: 31%;
+    margin-right: 31%;
+    z-index: 1;
+    color:#FFFFFF;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.title_button{
+    margin-left: 46.5%;
+    margin-right: 50%;
+    font-size: 1vw;
+    margin-top: 4%;
+    background: transparent;
+    color: white;
+    border: 2px solid #FFFFFF .1;
+    
+}
+
+.title_arrow{
+    margin-top: 18%;
+    margin-left: 50%;
+    align-items: center;
+    height: 1vw;
+}
+
+/* nav_bar */                     
+.nav_bar{
+    width: 100%;
+    height: 7.9vh;
+    background: #FB423D 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.nav_menu{
+    color: #FFFFFF;
+    margin-left: 10%;
+    padding-top: 1%;
+}
+
+.nav_menu ul{
+    display: inline;
+    font-size: 1vw;
+    text-align: left;
+    letter-spacing: 0px;
+    padding-right: 2%;
+}
+
+.nav_search{
+   margin-left: 36%;
+    background: transparent;
+    color: #FFFFFF;
+    border: none;
+    border-bottom: 1px solid #FFFFFF ;
+
+    font-size: 1vw;
+}
+
+.nav_search_icon{
+    margin-left: -1.5%;
+    height: 1vw;
+}
+
+
+/* Timeline  */
+
+.time_line_title{
+    margin-left: 34%;
+    margin-right: 34%;
+    margin-top: 5%;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #2C2E37;
+    opacity: 1;
+    font-size: 1.59vw;
+    font-weight: bold;
+}
+
+.time_line_band{
+    display: flex;
+    width: 100%;
+}
+
+
+.time_line_band div{
+    text-align: center;
+}
+
+.time_line_band div label{
+    font-weight: bold;
+}
+
+.time_line_number{
+    border-radius: 50px;
+    font-size:20px  ;
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    color: blue;
+}
+
+.brand_identity{
+    flex: 1;
+}
+.ui_design{
+    flex: 1;
+}
+.development{
+    flex: 1;
+}
+
+.time_line_text{
+    font-size: 2vw;
+}
+
+.time_line_button{
+    margin-left: 46.5%;
+    margin-right: 50%;
+    font-size: 1vw;
+    margin-top: 4%;
+    background: transparent;
+    color: black;
+    border: 2px solid #FFFFFF 1;
+}
+
+/* poroject_section */
+
+.project_image{
+    background: #2C2E37;
+    /* background-image : url('image/project_details.png'); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: fill;
+    height: 41.66vw;
+    color: #FFFFFF;
+    opacity: .8;
+}
+
+.project_heading{
+    padding-top:16% ;
+    font-size: 1.87vw;
+    font-weight: bold ;
+    text-align: center; 
+    
+
+}
+
+.project_text{
+    margin-top: -2%;
+    margin-left: 35.5%;
+    margin-right: 35.5%;
+    font-size: 2vw;
+    text-align: center; 
+
+}
+.project_small_text{
+    margin-top: 2%;
+    font-size: 1.5vw;
+    opacity: .5 ;
+    text-decoration: underline;
+    text-align: center; 
+}
+.project_arrow_left{
+    height: 1vw;
+    margin-left: 10%;
+}
+
+.project_arrow_right{
+    height: 1vw;
+    margin-left: 80%;
+}
+
+/* latest_prohect */
+
+.latest_project{
+    display: flex;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    font-size: 2vw;
+}
+
+.latest_project1{
+    flex: 1;
+    padding-right: 6%;
+}
+
+.latest_project2{
+    flex: 1;
+}
+
+.company_logos{
+    margin-top: 7%;
+    margin-left: 7%;
+    padding-bottom: 7%;
+    width: 100vw;
+    display: flex;
+}
+
+.company_logos img{
+    flex: 1;
+    padding-right: 10%;
+}
+
+.company_logos_slack{
+    height: 1.66vw;
+}
+
+.company_logos_adobe{
+    height: 2.22vw;
+}
+.company_logos_google{
+    height: 1.875vw;
+}
+.company_logos_fb{
+    height: 1.11vw;
+}
+.company_logos_spotify{
+    height: 1.59vw;
+}
+.company_logos_nike{
+    height: 1.73vw;
+}
