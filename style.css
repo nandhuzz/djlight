@@ -1,3 +1,30 @@
+@font-face {
+    font-family:Raleway-Bold ;
+    src: url('/font/Raleway-Bold.ttf');
+}
+
+@font-face {
+    font-family:Raleway-ExtraBold ;
+    src: url('/font/Raleway-ExtraBold.ttf');
+}
+
+
+@font-face {
+    font-family:Raleway-SemiBold ;
+    src: url('/font/Raleway-SemiBold.ttf');
+}
+
+@font-face {
+    font-family:OpenSans;
+    src: url('/font/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family:OpenSans-Italic ;
+    src: url('/font/OpenSans-Italic.ttf');
+}
+
+
 html, body{
     margin: 0%;
     padding: 0%;
@@ -14,7 +41,20 @@ html, body{
     background-size: 100%;
     object-fit: fill;
     height: 54.17vw;
-   
+  
+}
+
+
+.title_mask{
+    margin-top: -50.8%;
+    margin-left: 0%;
+    background: #464852;
+    opacity: .4;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: fill;
+    height: 54.17vw;
+    z-index: 0;
 }
 
 .title_logo{
@@ -24,7 +64,7 @@ html, body{
     height: 3vw;
     background-size: contain;
    
-    z-index: 1;
+    z-index: 2;
    
 }
 .title_heading{
@@ -33,8 +73,9 @@ html, body{
     margin-right: 31%;
     z-index: 1;
     color:#FFFFFF;
-    font-size: 3vw;
+    font-size: 2.7vw;
     text-align: center;
+    font-family: Raleway-Bold;
 }
 
 .title_button{
@@ -45,6 +86,7 @@ html, body{
     background: transparent;
     color: white;
     border: 2px solid #FFFFFF .1;
+    font-family: Raleway-ExtraBold;
     
 }
 
@@ -61,6 +103,7 @@ html, body{
     height: 7.9vh;
     background: #FB423D 0% 0% no-repeat padding-box;
     opacity: 1;
+    font-family:Raleway-SemiBold
 }
 
 .nav_menu{
@@ -74,7 +117,7 @@ html, body{
     font-size: 1vw;
     text-align: left;
     letter-spacing: 0px;
-    padding-right: 1%;
+    /* padding-right: 1%; */
 }
 
 .nav_search{
@@ -106,6 +149,7 @@ html, body{
     opacity: 1;
     font-size: 1.59vw;
     font-weight: bold;
+    font-family: Raleway-ExtraBold;
 }
 
 .time_line_band{
@@ -115,27 +159,33 @@ html, body{
     margin-right: 11%;
 }
 
-
 .time_line_band div{
     text-align: center;
 }
 
-.time_line_band div label{
+.time_line_subtitle{
     font-weight: bold;
     font-size: 1.37vw;
+    margin-top:10%;
+    font-family: Raleway-ExtraBold;
 }
 
-.time_line_number{
-    margin-left: 43%;
+.time_line_number_border{
+    margin-left: 40%;
     margin-top: 17%;
-    border-radius: 3.4vw;
-    font-size:1.38vw ;
-    width: 3.4vw;
-    height: 3.47vw;
+    margin-bottom: 10%;
+    border-radius: 2.4vw;
+    width: 2.4vw;
+    height: 2.47vw;
     background-color: #D2D2D2;
-    color:#FFFFFF;
+    
     padding :5%;
 }
+.time_line_number{
+    font-size:1.38vw ;
+    color:#FFFFFF;
+}
+
 
 .brand_identity{
     flex: 1;
@@ -151,18 +201,31 @@ html, body{
     font-size: 1vw;
     padding-left: 5%;
     padding-right: 10%;
+    font-family:OpenSans;
+    padding-top: 10%;
 }
 
 .time_line_button{
     margin-left: 35.5%;
     margin-right: 50%;
     font-size: 1vw;
-    margin-top: 4%;
+    margin-top: 6%;
+    font-family: Raleway-ExtraBold;
     background: transparent;
     color: black;
     border: 2px solid #FFFFFF 1;
 }
 
+
+
+.divider {
+    flex-grow: 1;
+    border-top: 2px solid #F2F2F2 ;
+    width: auto;
+    margin-top: 7%;
+    margin-left: -10%;
+    margin-right: -10%;
+  }
 /*##########################################################  poroject_section ########################################################## */
 
 .project_image{
@@ -178,39 +241,51 @@ html, body{
 }
 
 .project_heading{
-    padding-top:16% ;
+    padding-top:14% ;
     font-size: 1.87vw;
     font-weight: bold ;
     text-align: center; 
-    
+    font-family: Raleway-ExtraBold;
 
 }
 
 .project_text{
-    margin-top: -2%;
-    margin-left: 35.5%;
-    margin-right: 35.5%;
-    font-size: 2vw;
+    font-family:OpenSans;
+    margin-top: -7%;
+    margin-left: 30.5%;
+    margin-right: 30.5%;
+    font-size: 1.8vw;
     text-align: center; 
+    
 
 }
 .project_small_text{
+    font-family:OpenSans-Italic; 
     margin-top: 2%;
     font-size: 1.5vw;
     opacity: .5 ;
     text-decoration: underline;
     text-align: center; 
+
 }
 .project_arrow_left{
     height: 1vw;
+    margin-top: 9%;
     margin-left: 10%;
 }
 
 .project_arrow_right{
     height: 1vw;
+    margin-top: 9%;
+
     margin-left: 80%;
 }
 
+.project_mask_image{
+    opacity: .1;
+    width: 100%;
+    margin-top: -35%;
+}
 /*##########################################################  latest_project ########################################################## */
 
 .latest_project{
@@ -220,6 +295,7 @@ html, body{
     margin-right: 10%;
     margin-top: 10%;
     font-size: 2vw;
+    font-family:OpenSans;
 }
 
 .latest_project1{
@@ -233,7 +309,23 @@ html, body{
 
 .latest_project2_time{
     padding-top: 18%;
+   display: flex;
 }
+
+.latest_project2_time_clock{
+    flex: 1;
+    padding-right: 3%;
+    margin-left: 0%;
+    margin-top: 0%;
+   
+}
+.latest_project2_time_text{
+    flex: 1;
+    padding-left: 3%;
+    font-family:OpenSans-Italic;
+}
+/* ################################################ Company logos ###########################################################  */
+
 .company_logos{
     margin-top: 7%;
     margin-left: 0%;
@@ -269,7 +361,7 @@ html, body{
     
 }
 
-/* our_journal */
+/*################################################################## our_journal ##################################################*/
 .our_journal_image{
     background-image : url('image/Bitmap@2x.png');
     background-repeat: no-repeat;
@@ -286,6 +378,7 @@ html, body{
     color:#000000;
     font-size: 3vw;
     text-align: center;
+    font-family: Raleway-ExtraBold;
 }
 
 .our_journal_button{
@@ -296,6 +389,7 @@ html, body{
     background: red;
     color: white;
     border: 2px solid #fa0202 .1;
+    font-family: Raleway-ExtraBold;
     
 }
 .our_journal_text{
@@ -303,10 +397,11 @@ html, body{
     margin-left: 31.5%;
     margin-right: 31.5%;
     font-size: 1vw;
+    font-family:OpenSans;
     text-align: center; 
 
 }
-/* footer_nav */
+/* ####################################### footer_nav #################################*/
 .footer_nav{
     height: 12.5vh;
     width: 100%;
@@ -350,3 +445,5 @@ html, body{
     height: 2vw;
     background-size: contain;
 }
+
+
