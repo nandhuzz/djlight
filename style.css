@@ -1,45 +1,13 @@
-html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-body{
-    margin: 0px;
-    padding: 0px;
+html, body{
+    margin: 0%;
+    padding: 0%;
     width: 100%;
+    margin-left: 0%;
+    overflow-x: hidden; 
+    /* height: 100%; */
 }
 
-/* Title Section */ 
+/*########################################################## Title Section ########################################################## */ 
 .title_image{
     background-image : url('image/Mask Group 1@2x.png');
     background-repeat: no-repeat;
@@ -87,9 +55,9 @@ body{
     height: 1vw;
 }
 
-/* nav_bar */                     
+/*########################################################## nav_bar ########################################################## */                     
 .nav_bar{
-    width: 100%;
+    /* width: 100%; */
     height: 7.9vh;
     background: #FB423D 0% 0% no-repeat padding-box;
     opacity: 1;
@@ -97,7 +65,7 @@ body{
 
 .nav_menu{
     color: #FFFFFF;
-    margin-left: 10%;
+    margin-left: 8%;
     padding-top: 1%;
 }
 
@@ -106,11 +74,11 @@ body{
     font-size: 1vw;
     text-align: left;
     letter-spacing: 0px;
-    padding-right: 2%;
+    padding-right: 1%;
 }
 
 .nav_search{
-   margin-left: 36%;
+   margin-left: 23%;
     background: transparent;
     color: #FFFFFF;
     border: none;
@@ -125,7 +93,7 @@ body{
 }
 
 
-/* Timeline  */
+/* ########################################################## Timeline  ########################################################## */
 
 .time_line_title{
     margin-left: 34%;
@@ -142,7 +110,9 @@ body{
 
 .time_line_band{
     display: flex;
-    width: 100%;
+    /* width: 100%; */
+    margin-left: 11%;
+    margin-right: 11%;
 }
 
 
@@ -152,15 +122,19 @@ body{
 
 .time_line_band div label{
     font-weight: bold;
+    font-size: 1.37vw;
 }
 
 .time_line_number{
-    border-radius: 50px;
-    font-size:20px  ;
-    width: 50px;
-    height: 50px;
-    background-color: brown;
-    color: blue;
+    margin-left: 43%;
+    margin-top: 17%;
+    border-radius: 3.4vw;
+    font-size:1.38vw ;
+    width: 3.4vw;
+    height: 3.47vw;
+    background-color: #D2D2D2;
+    color:#FFFFFF;
+    padding :5%;
 }
 
 .brand_identity{
@@ -173,12 +147,14 @@ body{
     flex: 1;
 }
 
-.time_line_text{
-    font-size: 2vw;
+.time_line_text {
+    font-size: 1vw;
+    padding-left: 5%;
+    padding-right: 10%;
 }
 
 .time_line_button{
-    margin-left: 46.5%;
+    margin-left: 35.5%;
     margin-right: 50%;
     font-size: 1vw;
     margin-top: 4%;
@@ -187,7 +163,7 @@ body{
     border: 2px solid #FFFFFF 1;
 }
 
-/* poroject_section */
+/*##########################################################  poroject_section ########################################################## */
 
 .project_image{
     background: #2C2E37;
@@ -198,6 +174,7 @@ body{
     height: 41.66vw;
     color: #FFFFFF;
     opacity: .8;
+    margin-top: 10%;
 }
 
 .project_heading{
@@ -234,7 +211,7 @@ body{
     margin-left: 80%;
 }
 
-/* latest_prohect */
+/*##########################################################  latest_project ########################################################## */
 
 .latest_project{
     display: flex;
@@ -254,35 +231,122 @@ body{
     flex: 1;
 }
 
+.latest_project2_time{
+    padding-top: 18%;
+}
 .company_logos{
     margin-top: 7%;
-    margin-left: 7%;
-    padding-bottom: 7%;
-    width: 100vw;
+    margin-left: 0%;
     display: flex;
+    height: 5.9vw;
 }
-
 .company_logos img{
-    flex: 1;
-    padding-right: 10%;
+    margin: auto;
 }
-
 .company_logos_slack{
     height: 1.66vw;
+   
 }
 
 .company_logos_adobe{
     height: 2.22vw;
+   
 }
 .company_logos_google{
     height: 1.875vw;
+    
 }
 .company_logos_fb{
     height: 1.11vw;
+   
 }
 .company_logos_spotify{
     height: 1.59vw;
+    
 }
 .company_logos_nike{
     height: 1.73vw;
+    
+}
+
+/* our_journal */
+.our_journal_image{
+    background-image : url('image/Bitmap@2x.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: fill;
+    height: 41.33vw;
+}
+
+.our_journal_heading{
+    padding-top: 10%;
+    margin-left: 31%;
+    margin-right: 31%;
+    z-index: 1;
+    color:#000000;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.our_journal_button{
+    margin-left: 46.5%;
+    margin-right: 50%;
+    font-size: 1vw;
+    margin-top: 4%;
+    background: red;
+    color: white;
+    border: 2px solid #fa0202 .1;
+    
+}
+.our_journal_text{
+    margin-top: 2%;
+    margin-left: 31.5%;
+    margin-right: 31.5%;
+    font-size: 1vw;
+    text-align: center; 
+
+}
+/* footer_nav */
+.footer_nav{
+    height: 12.5vh;
+    width: 100%;
+    background-color: #2C2E37;   
+    display: inline-flex; 
+    padding-top: 8%;
+}
+.footer_logo{
+  
+    margin-left: 10.5%;
+    height: 5vw;
+    background-size: contain;
+   
+    
+}
+
+.footer_menu{
+
+    display: flex;
+    margin-left: 5%;
+    
+    
+}
+
+.footer_menu ul{  
+    flex:1;
+    font-size: 1vw;
+    text-align: left;
+    letter-spacing: 0px;
+    padding-right: .2%;
+    color: #FFFFFF;
+}
+
+.footer_fb_logo{
+    padding-left: 20%;
+    height: 2vw;
+    background-size: contain;
+}
+.footer_twitter_logo{
+    padding-left: 3%;
+    height: 2vw;
+    background-size: contain;
 }
