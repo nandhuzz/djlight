@@ -31,14 +31,14 @@
             }
 
 
-            var arr=["Anandhu", "Ajish", "Abhilash", "Devika", "Kavya", "Edvin", "Navaneeth", "Jill",  "Nyshitha", "Ansila", "Varsha"];
+            var arr=["Anandhu", "Ajish", "Abhilash", "Devika", "Kavya", "EdWin", "Keerthi", "Donatto", "Sangeeth", "Navaneeth", "Jill",  "Nyshitha", "Ansila", "Varsha"];
             function myFunction() 
             {
                 var b = generateColor();
                 document.body.style.backgroundColor = b;
                 var c = generateColor();
                 name.style.color = c;
-                let a = Math.floor(Math.random() * 11);
+                let a = Math.floor(Math.random() * arr.length);
                 document.getElementById("name").innerText = arr[a];
 
             }
