@@ -11,6 +11,6 @@ function generateColor() {
 function myFunction() 
 {
     var a = generateColor();
-    document.body.style.backgroundColor = a;
+    document.getElementById("allcolor").style.backgroundColor = a;
 }
 setInterval("myFunction()", 200);
