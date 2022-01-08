@@ -1,0 +1,60 @@
+<html>
+    <head>
+      <style>
+        body{
+          margin: 0;
+          top:0;
+          padding: 0;
+        }
+        .mainClass { 
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+        .strip{
+          border: 1px solid black;
+          width: 100%;
+          height: 5%;
+        }
+     </style>
+    </head>
+    <body onload="buildFunction()" >
+        <div class="mainClass" id="mainClass" > 
+        </div>
+    <script>
+      function generateColor() {
+              var length = 6,
+                  charset = "abcdef0123456789",
+                  retVal = "#";
+                  for (var i = 0, n = charset.length; i < length; ++i) {
+                      retVal += charset.charAt(Math.floor(Math.random() * n));
+              }
+              return retVal;
+          }
+
+        function myFunction() 
+        {
+          for(i=0;i<20;i++){
+            var a = generateColor();
+            document.getElementById(i).style.backgroundColor = a;
+          }
+        }
+        setInterval("myFunction()", 500);
+
+
+      function buildFunction() {
+      let html = '';
+      for(let i=0; i<20; i++){
+        html+=`<div class='strip' id=${i}> </div>`;
+      }
+      document.body.style.backgroundColor = 'white';
+      document.getElementById("mainClass").innerHTML = html;
+      myFunction() 
+    }
+
+
+    </script>
+    </body>
+
+</html>
